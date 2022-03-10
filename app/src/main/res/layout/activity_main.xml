@@ -1,0 +1,505 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:fillViewport="true"
+    android:isScrollContainer="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mesum.pagerjava.MainActivity">
+
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_alignParentTop="true"
+            android:background="?attr/colorPrimary"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            app:subtitleTextAppearance="@style/TextAppearance.AppCompat.Body1"
+            app:title="@string/app_name"
+            app:titleTextColor="@color/black" />
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tab_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/toolbar"
+            android:background="?attr/colorPrimary"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/pager"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_below="@id/tab_layout"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tab_layout">
+
+        </androidx.viewpager.widget.ViewPager>
+
+        <HorizontalScrollView
+            android:id="@+id/toptitles"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_below="@+id/pager"
+            android:layout_marginTop="8dp"
+            android:scrollbarAlwaysDrawHorizontalTrack="true"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/pager">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+                        <ImageView
+                            android:id="@+id/img1"
+                            android:layout_width="103dp"
+                            android:layout_height="80dp"
+                            android:src="@drawable/stack" />
+
+                        <TextView
+                            android:layout_width="77dp"
+                            android:layout_height="55dp"
+                            android:layout_below="@id/img1"
+                            android:gravity="center"
+                            android:text=" Main Category1" />
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+                        <ImageView
+                            android:id="@+id/img2"
+                            android:layout_width="103dp"
+                            android:layout_height="80dp"
+                            android:src="@drawable/stack" />
+
+                        <TextView
+                            android:layout_width="82dp"
+                            android:layout_height="51dp"
+                            android:layout_below="@id/img2"
+                            android:gravity="center"
+                            android:text=" Main Category 2" />
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+                        <ImageView
+                            android:id="@+id/img3"
+                            android:layout_width="103dp"
+                            android:layout_height="80dp"
+                            android:src="@drawable/stack" />
+
+                        <TextView
+                            android:layout_width="74dp"
+                            android:layout_height="46dp"
+                            android:layout_below="@id/img3"
+                            android:gravity="center"
+                            android:text=" Main Category 3" />
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+                        <ImageView
+                            android:id="@+id/img4"
+                            android:layout_width="103dp"
+                            android:layout_height="80dp"
+                            android:src="@drawable/stack" />
+
+                        <TextView
+                            android:layout_width="74dp"
+                            android:layout_height="46dp"
+                            android:layout_below="@id/img4"
+                            android:gravity="center"
+                            android:text=" Main Category 4" />
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+                        <ImageView
+                            android:id="@+id/img5"
+                            android:layout_width="103dp"
+                            android:layout_height="80dp"
+                            android:src="@drawable/stack" />
+
+                        <TextView
+                            android:layout_width="74dp"
+                            android:layout_height="46dp"
+                            android:layout_below="@id/img5"
+                            android:gravity="center"
+                            android:text=" Main Category 5" />
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+
+            </LinearLayout>
+
+
+        </HorizontalScrollView>
+
+        <TextView
+            android:id="@+id/bestChoice"
+            style="@style/TextAppearance.AppCompat.Body1"
+
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="-1dp"
+            android:gravity="start"
+            android:text="#Best Title"
+            android:textSize="18dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toptitles">
+
+        </TextView>
+
+        <GridView
+            android:id="@+id/gridbody"
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:layout_below="@id/toptitles"
+            android:layout_marginTop="50dp"
+            android:numColumns="3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toptitles" />
+
+
+        <TextView
+            android:id="@+id/toptiples"
+            style="@style/TextAppearance.AppCompat.Body1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:gravity="bottom"
+            android:text="#Top Title"
+            android:textSize="18dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/gridbody">
+
+        </TextView>
+        <HorizontalScrollView
+            android:id="@+id/titles"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_below="@+id/gridbody"
+            android:scrollbarAlwaysDrawHorizontalTrack="true"
+            app:layout_constraintEnd_toStartOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toptiples">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/toptitleimages"
+                        android:layout_width="103dp"
+                        android:layout_height="60dp"
+                        android:src="@drawable/chef1"
+                        app:civ_border_color="#C8E6E0"
+                        app:civ_border_width="2dp" />
+
+                    <TextView
+                        android:layout_width="93dp"
+                        android:layout_height="50dp"
+                        android:layout_below="@+id/toptitleimages"
+                        android:gravity="center"
+                        android:text="User 1"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent" />
+                </RelativeLayout>
+
+
+
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/toptitleimages1"
+                        android:layout_width="103dp"
+                        android:layout_height="60dp"
+                        android:src="@drawable/chef1"
+                        app:civ_border_color="#C8E6E0"
+                        app:civ_border_width="2dp" />
+
+                    <TextView
+                        android:layout_width="85dp"
+                        android:layout_height="46dp"
+                        android:layout_below="@+id/toptitleimages1"
+                        android:gravity="center"
+                        android:text="User 2"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent" />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/toptitleimages2"
+                        android:layout_width="103dp"
+                        android:layout_height="60dp"
+                        android:src="@drawable/chef1"
+                        app:civ_border_color="#C8E6E0"
+                        app:civ_border_width="2dp" />
+
+                    <TextView
+                        android:layout_width="90dp"
+                        android:layout_height="43dp"
+                        android:layout_below="@+id/toptitleimages2"
+                        android:gravity="center"
+                        android:text="User 3"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent" />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/toptitleimages3"
+                        android:layout_width="103dp"
+                        android:layout_height="60dp"
+                        android:src="@drawable/chef1"
+                        app:civ_border_color="#C8E6E0"
+                        app:civ_border_width="2dp" />
+
+                    <TextView
+                        android:layout_width="93dp"
+                        android:layout_height="44dp"
+                        android:layout_below="@+id/toptitleimages3"
+                        android:gravity="center"
+                        android:text="User 4"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent" />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/toptitleimages4"
+                        android:layout_width="103dp"
+                        android:layout_height="60dp"
+                        android:src="@drawable/chef1"
+                        app:civ_border_color="#C8E6E0"
+                        app:civ_border_width="2dp" />
+
+                    <TextView
+                        android:layout_width="91dp"
+                        android:layout_height="41dp"
+                        android:layout_below="@+id/toptitleimages4"
+                        android:gravity="center"
+                        android:text="User 5"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent" />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/toptitleimages5"
+                        android:layout_width="103dp"
+                        android:layout_height="60dp"
+                        android:src="@drawable/chef1"
+                        app:civ_border_color="#C8E6E0"
+                        app:civ_border_width="2dp" />
+
+                    <TextView
+                        android:layout_width="67dp"
+                        android:layout_height="44dp"
+                        android:layout_below="@+id/toptitleimages5"
+                        android:gravity="center"
+                        android:text="User 6"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent" />
+                </RelativeLayout>
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <TextView
+            android:id="@+id/bycategory"
+            style="@style/TextAppearance.AppCompat.Body1"
+
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="start"
+            android:text="#Shop by category"
+            android:textSize="18dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/titles">
+
+        </TextView>
+
+
+
+
+        <HorizontalScrollView
+            android:id="@+id/subcateory"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_below="@+id/pager"
+            android:scrollbarAlwaysDrawHorizontalTrack="true"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/bycategory">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_height="match_parent" android:layout_width="match_parent">
+
+                    <TextView
+                        android:layout_width="60dp"
+                        android:layout_height="81dp"
+                        android:layout_toRightOf="@id/subcat1"
+                        android:gravity="center"
+                        android:text="Sub category" />
+
+                    <ImageView
+                        android:id="@+id/subcat1"
+                        android:layout_width="150dp"
+                        android:layout_height="83dp"
+                        android:src="@drawable/stack" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_height="match_parent" android:layout_width="match_parent">
+
+                    <TextView
+                        android:layout_width="60dp"
+                        android:layout_height="81dp"
+                        android:layout_toRightOf="@id/subcat2"
+                        android:gravity="center"
+                        android:text="Sub category" />
+
+                    <ImageView
+                        android:id="@+id/subcat2"
+                        android:layout_width="150dp"
+                        android:layout_height="83dp"
+                        android:src="@drawable/stack" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+        <GridView
+            android:id="@+id/gridsub"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="15dp"
+            android:numColumns="3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/subcateory" />
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomNavigationView"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@color/teal_200"
+            app:layout_constraintTop_toBottomOf="@id/gridsub"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:menu="@menu/bottom_nav_menu"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+</ScrollView>
+
+
+
+
+
+

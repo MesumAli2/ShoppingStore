@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">USell
+        Up</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="tab_label1">Fashion</string>
+    <string name="tab_label2">Now Trending</string>
+    <string name="tab_label3">Best Seller</string>
+</resources>
